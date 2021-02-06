@@ -1,0 +1,11 @@
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\FormularioHospital2.exe.config
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\FormularioHospital2.exe
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\FormularioHospital2.pdb
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.csprojAssemblyReference.cache
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Properties.Resources.resources
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.csproj.GenerateResource.cache
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.exe
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.pdb
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Login.resources
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Registrarse.resources
