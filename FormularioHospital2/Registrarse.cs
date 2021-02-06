@@ -30,8 +30,8 @@ namespace FormularioHospital2
         private void button1_Click(object sender, EventArgs e)
         {
             string nombreStr = nombre.Text;
-            string usuario;
-            string contresena;
+            string usuarioStr = usuario.Text;
+            string contresenaStr = contrasena.Text;
 
 
            // Program.usuarios;

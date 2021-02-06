@@ -19,8 +19,8 @@ namespace FormularioHospital2
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Registrarse registrarse = new Registrarse(this);
-            registrarse.Show();
+            this.registrarse = new Registrarse(this);
+            this.registrarse.Show();
         }
     }
 }
