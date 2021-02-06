@@ -40,9 +40,10 @@ namespace FormularioHospital2
             catch(Exception)
             {
                 Console.WriteLine("No se ha conectado a la base de datos!");
+            }
             */
             }
         }
 
     }
-}
+

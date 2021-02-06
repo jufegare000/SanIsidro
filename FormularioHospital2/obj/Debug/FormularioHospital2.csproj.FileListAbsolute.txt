@@ -9,5 +9,9 @@ C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\Formula
 C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.pdb
 C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Login.resources
 C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Registrarse.resources
-C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\HospitalSan.mdf
-C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\HospitalSan_log.ldf
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Formularios.Reportes.Reporte.resources
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.csproj.CopyComplete

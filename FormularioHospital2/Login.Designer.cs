@@ -35,7 +35,7 @@ namespace FormularioHospital2
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.usuario = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.contrasena = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,13 +95,13 @@ namespace FormularioHospital2
             this.usuario.TabIndex = 5;
             this.usuario.Tag = "";
             // 
-            // textBox2
+            // contrasena
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 377);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '+';
-            this.textBox2.Size = new System.Drawing.Size(138, 20);
-            this.textBox2.TabIndex = 6;
+            this.contrasena.Location = new System.Drawing.Point(110, 377);
+            this.contrasena.Name = "contrasena";
+            this.contrasena.PasswordChar = '+';
+            this.contrasena.Size = new System.Drawing.Size(138, 20);
+            this.contrasena.TabIndex = 6;
             // 
             // label2
             // 
@@ -131,7 +131,7 @@ namespace FormularioHospital2
             this.ClientSize = new System.Drawing.Size(363, 478);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.contrasena);
             this.Controls.Add(this.usuario);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -152,7 +152,7 @@ namespace FormularioHospital2
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox usuario;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox contrasena;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }

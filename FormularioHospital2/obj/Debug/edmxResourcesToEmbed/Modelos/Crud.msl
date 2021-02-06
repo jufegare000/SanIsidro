@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CrudModelsStoreContainer" CdmEntityContainer="hostopitalsanisidroEntities4">
+    <EntitySetMapping Name="paciente">
+      <EntityTypeMapping TypeName="CrudModels.paciente">
+        <MappingFragment StoreEntitySet="paciente">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+          <ScalarProperty Name="tipodedocumento" ColumnName="tipodedocumento" />
+          <ScalarProperty Name="numerodocumento" ColumnName="numerodocumento" />
+          <ScalarProperty Name="paisdeorigen" ColumnName="paisdeorigen" />
+          <ScalarProperty Name="tiempodepermanenciaenmeses" ColumnName="tiempodepermanenciaenmeses" />
+          <ScalarProperty Name="genero" ColumnName="genero" />
+          <ScalarProperty Name="fechanacimiento" ColumnName="fechanacimiento" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="estadocivil" ColumnName="estadocivil" />
+          <ScalarProperty Name="correoelectronico" ColumnName="correoelectronico" />
+          <ScalarProperty Name="numerodehijos" ColumnName="numerodehijos" />
+          <ScalarProperty Name="direccionresidencia" ColumnName="direccionresidencia" />
+          <ScalarProperty Name="barrioresidencia" ColumnName="barrioresidencia" />
+          <ScalarProperty Name="telefonocontacto" ColumnName="telefonocontacto" />
+          <ScalarProperty Name="ocupacion" ColumnName="ocupacion" />
+          <ScalarProperty Name="nivelescolaridad" ColumnName="nivelescolaridad" />
+          <ScalarProperty Name="eps" ColumnName="eps" />
+          <ScalarProperty Name="regimen" ColumnName="regimen" />
+          <ScalarProperty Name="antecedentesmedicos" ColumnName="antecedentesmedicos" />
+          <ScalarProperty Name="convenio" ColumnName="convenio" />
+          <ScalarProperty Name="contactoemergencia" ColumnName="contactoemergencia" />
+          <ScalarProperty Name="masa" ColumnName="masa" />
+          <ScalarProperty Name="peso" ColumnName="peso" />
+          <ScalarProperty Name="estatura" ColumnName="estatura" />
+          <ScalarProperty Name="imcmvalor" ColumnName="imcmvalor" />
+          <ScalarProperty Name="imcvalor" ColumnName="imcvalor" />
+          <ScalarProperty Name="imchvalor" ColumnName="imchvalor" />
+          <ScalarProperty Name="imcdescripcion" ColumnName="imcdescripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="CrudModels.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="usuario1" ColumnName="usuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

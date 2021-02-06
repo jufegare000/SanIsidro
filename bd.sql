@@ -1,16 +1,15 @@
 Create database hospitalsanisidro
-go;
+
+use hostopitalsanisidro;
+
 
 create table usuario(
+ usuario varchar(100) primary key,
  nombre varchar(100),
- usuario varchar(100),
  contrasena varchar(100))
  
- go;
- 
- create table 
- 
   create table paciente(
+  id int identity primary key not null, 
  nombre varchar(300),
  apellidos varchar(300),
  tipodedocumento varchar(10),
@@ -35,8 +34,10 @@ create table usuario(
  contactoemergencia varchar(30),
  masa float,
  peso float,
- estatura float
+ estatura float,
+ imcmvalor float,
+ imcvalor float,
+ imchvalor float,
+ imcdescripcion varchar(30)
  );
- 
- 
- go;
+https://www.youtube.com/watch?v=JAfg2j8qrsg&ab_channel=hdeleon.net

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CrudModels.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="paciente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="300" />
+    <Property Name="apellidos" Type="varchar" MaxLength="300" />
+    <Property Name="tipodedocumento" Type="varchar" MaxLength="10" />
+    <Property Name="numerodocumento" Type="varchar" MaxLength="20" />
+    <Property Name="paisdeorigen" Type="varchar" MaxLength="200" />
+    <Property Name="tiempodepermanenciaenmeses" Type="int" />
+    <Property Name="genero" Type="varchar" MaxLength="20" />
+    <Property Name="fechanacimiento" Type="varchar" MaxLength="100" />
+    <Property Name="edad" Type="int" />
+    <Property Name="estadocivil" Type="varchar" MaxLength="30" />
+    <Property Name="correoelectronico" Type="varchar" MaxLength="200" />
+    <Property Name="numerodehijos" Type="int" />
+    <Property Name="direccionresidencia" Type="varchar" MaxLength="300" />
+    <Property Name="barrioresidencia" Type="varchar" MaxLength="200" />
+    <Property Name="telefonocontacto" Type="varchar" MaxLength="20" />
+    <Property Name="ocupacion" Type="varchar" MaxLength="100" />
+    <Property Name="nivelescolaridad" Type="varchar" MaxLength="200" />
+    <Property Name="eps" Type="varchar" MaxLength="200" />
+    <Property Name="regimen" Type="varchar" MaxLength="100" />
+    <Property Name="antecedentesmedicos" Type="varchar" MaxLength="5000" />
+    <Property Name="convenio" Type="varchar" MaxLength="200" />
+    <Property Name="contactoemergencia" Type="varchar" MaxLength="30" />
+    <Property Name="masa" Type="float" />
+    <Property Name="peso" Type="float" />
+    <Property Name="estatura" Type="float" />
+    <Property Name="imcmvalor" Type="float" />
+    <Property Name="imcvalor" Type="float" />
+    <Property Name="imchvalor" Type="float" />
+    <Property Name="imcdescripcion" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="usuario" />
+    </Key>
+    <Property Name="usuario" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="100" />
+    <Property Name="contrasena" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="CrudModelsStoreContainer">
+    <EntitySet Name="paciente" EntityType="Self.paciente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

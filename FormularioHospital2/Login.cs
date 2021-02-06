@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using FormularioHospital2.Modelos;
 
 namespace FormularioHospital2
 {
@@ -13,6 +14,8 @@ namespace FormularioHospital2
 
         private void button2_Click(object sender, EventArgs e)
         {
+            string usuarioStr = usuario.Text;
+            string contrasenaStr = contrasena.Text;
 
         }
 
