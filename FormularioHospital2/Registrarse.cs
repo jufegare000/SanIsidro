@@ -39,6 +39,8 @@ namespace FormularioHospital2
                     db.SaveChanges();
                     db.SaveChanges();
                     MessageBox.Show("Se ha registrado el usuario: " + usuarioStr + " satisfactoriamente");
+                    this.Close();
+                    loginForm.Show();
                 }
                 catch( Exception)
                 {
