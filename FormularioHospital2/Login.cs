@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Windows.Forms;
 using FormularioHospital2.Modelos;
+using FormularioHospital2.Formularios.Principal;
 
 namespace FormularioHospital2
 {
     public partial class Login : Form {
 
         Registrarse registrarse = null;
+        Principal principal = null;
+
         public Login()
         {
             InitializeComponent();
@@ -17,6 +20,10 @@ namespace FormularioHospital2
             string usuarioStr = usuario.Text;
             string contrasenaStr = contrasena.Text;
 
+            this.principal = new Principal();
+            principal.Show();
+            this.Hide();
+            /*
             using (hostopitalsanisidroEntities4 db = new hostopitalsanisidroEntities4())
             {
                 usuario usuariodb = new usuario();
@@ -26,13 +33,17 @@ namespace FormularioHospital2
                 {
                     usuario usuarioTofind = db.usuario.Find(usuarioStr);
 
-                    if(usuarioTofind.contrasena == contrasenaStr)
+                    if(usuarioTofind.contrasena == null)
                     {
-                        MessageBox.Show("Ha ingresado el usuario: " + usuarioTofind.nombre);
+
+                        MessageBox.Show("Usuario y/o contraseña inválidos");
                     }
                     else
                     {
-                        MessageBox.Show("Usuario y/o contraseña inválidos");
+                        MessageBox.Show("Ha ingresado el usuario: " + usuarioTofind.nombre);
+                        this.principal = new Principal();
+                        principal.Show();
+                        this.Hide();                                
                     }
                 }
                 catch (Exception)
@@ -40,7 +51,7 @@ namespace FormularioHospital2
                     MessageBox.Show("No se puede conectar con la base de datos");
                 }
 
-            }
+            }*/
 
 
 
