@@ -184,5 +184,10 @@ namespace FormularioHospital2.Formularios.Pacientes
             }
 
         }
+
+        private void RegitrarPaciente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            pricipalForm.Show();
+        }
     }
 }

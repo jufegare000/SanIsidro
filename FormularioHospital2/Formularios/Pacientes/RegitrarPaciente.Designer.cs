@@ -741,6 +741,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.Controls.Add(this.label3);
             this.Name = "RegitrarPaciente";
             this.Text = "RegitrarPaciente";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RegitrarPaciente_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

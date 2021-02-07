@@ -13,7 +13,8 @@ C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\Formula
 C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\EntityFramework.xml
 C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Formularios.Reportes.Reporte.resources
 C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.csproj.CopyComplete
 C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Formularios.Pacientes.RegitrarPaciente.resources
 C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Formularios.Principal.Principal.resources
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Formularios.Reportes.Inmigrantes.InmigrantesPorPais.resources
+C:\Users\User\Documents\Jobs\.net\FormularioHospital\FormularioHospital2\FormularioHospital2\obj\Debug\FormularioHospital2.Formularios.Reportes.RepPrincipal.resources

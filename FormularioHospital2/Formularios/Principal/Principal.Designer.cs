@@ -75,6 +75,7 @@ namespace FormularioHospital2.Formularios.Principal
             this.button2.TabIndex = 6;
             this.button2.Text = "Ver Reportes";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Principal
             // 
@@ -86,6 +87,8 @@ namespace FormularioHospital2.Formularios.Principal
             this.Controls.Add(this.label1);
             this.Name = "Principal";
             this.Text = "Principal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Principal_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

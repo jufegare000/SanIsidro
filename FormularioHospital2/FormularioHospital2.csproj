@@ -82,11 +82,17 @@
     <Compile Include="Formularios\Principal\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Reportes\Reporte.cs">
+    <Compile Include="Formularios\Reportes\Inmigrantes\InmigrantesPorPais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Reportes\Reporte.Designer.cs">
-      <DependentUpon>Reporte.cs</DependentUpon>
+    <Compile Include="Formularios\Reportes\Inmigrantes\InmigrantesPorPais.Designer.cs">
+      <DependentUpon>InmigrantesPorPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\RepPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\RepPrincipal.Designer.cs">
+      <DependentUpon>RepPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -129,8 +135,11 @@
     <EmbeddedResource Include="Formularios\Principal\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Reportes\Reporte.resx">
-      <DependentUpon>Reporte.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Reportes\Inmigrantes\InmigrantesPorPais.resx">
+      <DependentUpon>InmigrantesPorPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\RepPrincipal.resx">
+      <DependentUpon>RepPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
