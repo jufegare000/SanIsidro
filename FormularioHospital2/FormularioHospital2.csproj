@@ -215,6 +215,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Formularios\Reportes\NewFolder1\" />
     <Folder Include="Modelos\local\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -44,5 +44,7 @@ namespace FormularioHospital2.Modelos
         public Nullable<double> imcvalor { get; set; }
         public Nullable<double> imchvalor { get; set; }
         public string imcdescripcion { get; set; }
+
+        public string formula { get; set; }
     }
 }

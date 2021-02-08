@@ -38,6 +38,7 @@ create table usuario(
  imcmvalor float,
  imcvalor float,
  imchvalor float,
- imcdescripcion varchar(30)
+ imcdescripcion varchar(30),
+ formula varchar(5000)
  );
 https://www.youtube.com/watch?v=JAfg2j8qrsg&ab_channel=hdeleon.net

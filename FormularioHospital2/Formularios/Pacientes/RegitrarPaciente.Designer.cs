@@ -88,6 +88,8 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.label22 = new System.Windows.Forms.Label();
             this.txtBarrio = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.txtHarrisBenedict = new System.Windows.Forms.RichTextBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -515,7 +517,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.button1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.button1.Font = new System.Drawing.Font("Sitka Heading", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(28, 137);
+            this.button1.Location = new System.Drawing.Point(458, 88);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 35);
             this.button1.TabIndex = 55;
@@ -526,7 +528,6 @@ namespace FormularioHospital2.Formularios.Pacientes
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.lbllIMCDescripcion);
             this.panel1.Controls.Add(this.lblIMCH);
             this.panel1.Controls.Add(this.lblIMCM);
@@ -538,12 +539,12 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.txtPeso);
             this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.txtEdad);
             this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(51, 544);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(653, 180);
+            this.panel1.Size = new System.Drawing.Size(653, 134);
             this.panel1.TabIndex = 56;
             // 
             // button2
@@ -553,7 +554,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.button2.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.button2.Font = new System.Drawing.Font("Sitka Heading", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(475, 134);
+            this.button2.Location = new System.Drawing.Point(270, 890);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 35);
             this.button2.TabIndex = 66;
@@ -690,12 +691,36 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.label27.TabIndex = 57;
             this.label27.Text = "Barrio de residencia";
             // 
+            // txtHarrisBenedict
+            // 
+            this.txtHarrisBenedict.Location = new System.Drawing.Point(248, 703);
+            this.txtHarrisBenedict.Name = "txtHarrisBenedict";
+            this.txtHarrisBenedict.Size = new System.Drawing.Size(437, 157);
+            this.txtHarrisBenedict.TabIndex = 67;
+            this.txtHarrisBenedict.Text = "";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label28.Location = new System.Drawing.Point(51, 769);
+            this.label28.Name = "label28";
+            this.label28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label28.Size = new System.Drawing.Size(163, 21);
+            this.label28.TabIndex = 66;
+            this.label28.Text = "Fórmula Harris Benedict";
+            // 
             // RegitrarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(728, 738);
+            this.ClientSize = new System.Drawing.Size(728, 946);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.txtHarrisBenedict);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.txtBarrio);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.panel1);
@@ -809,5 +834,7 @@ namespace FormularioHospital2.Formularios.Pacientes
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtBarrio;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.RichTextBox txtHarrisBenedict;
+        private System.Windows.Forms.Label label28;
     }
 }

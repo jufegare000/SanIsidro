@@ -62,7 +62,8 @@ namespace FormularioHospital2.Formularios.Pacientes
 
         public double calcularIMCG(double peso, double estatura, double edad)
         {
-            return peso / (estatura * estatura);
+            double imc = peso / (estatura * estatura);
+            return imc;
         }
 
         public double calcularIMCM(double peso, double estatura, double edad)
