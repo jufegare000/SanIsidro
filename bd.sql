@@ -1,4 +1,4 @@
-Create database hospitalsanisidro
+create database hostopitalsanisidro
 
 use hostopitalsanisidro;
 
@@ -41,4 +41,12 @@ create table usuario(
  imcdescripcion varchar(30),
  formula varchar(5000)
  );
+ 
+ create view [dbo].[inmigrantesporpais]
+as
+select paisdeorigen, count(*) as numero from paciente where paisdeorigen != 'Colombia' group by paisdeorigen
+GO
+ 
+ 
+ 
 https://www.youtube.com/watch?v=JAfg2j8qrsg&ab_channel=hdeleon.net
