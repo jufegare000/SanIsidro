@@ -74,7 +74,6 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.label21 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.lbllIMCDescripcion = new System.Windows.Forms.Label();
             this.lblIMCH = new System.Windows.Forms.Label();
             this.lblIMCM = new System.Windows.Forms.Label();
@@ -86,10 +85,12 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.label23 = new System.Windows.Forms.Label();
             this.txtPeso = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.txtBarrio = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.txtHarrisBenedict = new System.Windows.Forms.RichTextBox();
             this.label28 = new System.Windows.Forms.Label();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,7 +175,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 65);
+            this.label5.Location = new System.Drawing.Point(730, 20);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 21);
             this.label5.TabIndex = 21;
@@ -215,7 +216,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             "Uruguay",
             "República Dominicana",
             "El Salvador"});
-            this.paises.Location = new System.Drawing.Point(118, 68);
+            this.paises.Location = new System.Drawing.Point(836, 23);
             this.paises.Name = "paises";
             this.paises.Size = new System.Drawing.Size(174, 21);
             this.paises.TabIndex = 22;
@@ -224,7 +225,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(376, 67);
+            this.label6.Location = new System.Drawing.Point(12, 65);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(221, 21);
             this.label6.TabIndex = 23;
@@ -232,7 +233,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtPermanenciaEnMeses
             // 
-            this.txtPermanenciaEnMeses.Location = new System.Drawing.Point(613, 68);
+            this.txtPermanenciaEnMeses.Location = new System.Drawing.Point(249, 66);
             this.txtPermanenciaEnMeses.Name = "txtPermanenciaEnMeses";
             this.txtPermanenciaEnMeses.Size = new System.Drawing.Size(56, 20);
             this.txtPermanenciaEnMeses.TabIndex = 24;
@@ -246,7 +247,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             "Mujer",
             "Trans",
             "Otro"});
-            this.cmbGenero.Location = new System.Drawing.Point(78, 112);
+            this.cmbGenero.Location = new System.Drawing.Point(414, 69);
             this.cmbGenero.Name = "cmbGenero";
             this.cmbGenero.Size = new System.Drawing.Size(63, 21);
             this.cmbGenero.TabIndex = 26;
@@ -255,7 +256,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 109);
+            this.label7.Location = new System.Drawing.Point(353, 66);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 21);
             this.label7.TabIndex = 25;
@@ -265,7 +266,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(193, 112);
+            this.label8.Location = new System.Drawing.Point(535, 65);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(137, 21);
             this.label8.TabIndex = 27;
@@ -273,7 +274,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtFechaNacimiento
             // 
-            this.txtFechaNacimiento.Location = new System.Drawing.Point(357, 113);
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(699, 66);
             this.txtFechaNacimiento.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             this.txtFechaNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
@@ -307,7 +308,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             "Separado",
             "Divorciado",
             "Viudo"});
-            this.cmbEstadoCivil.Location = new System.Drawing.Point(115, 155);
+            this.cmbEstadoCivil.Location = new System.Drawing.Point(111, 111);
             this.cmbEstadoCivil.Name = "cmbEstadoCivil";
             this.cmbEstadoCivil.Size = new System.Drawing.Size(139, 21);
             this.cmbEstadoCivil.TabIndex = 32;
@@ -316,7 +317,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(17, 152);
+            this.label10.Location = new System.Drawing.Point(13, 108);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 21);
             this.label10.TabIndex = 31;
@@ -326,7 +327,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(295, 152);
+            this.label11.Location = new System.Drawing.Point(291, 108);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(123, 21);
             this.label11.TabIndex = 33;
@@ -334,16 +335,16 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(445, 156);
+            this.txtCorreo.Location = new System.Drawing.Point(423, 109);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(240, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(184, 20);
             this.txtCorreo.TabIndex = 34;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(17, 205);
+            this.label12.Location = new System.Drawing.Point(17, 153);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(114, 21);
             this.label12.TabIndex = 35;
@@ -351,7 +352,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtNumeroDeHijos
             // 
-            this.txtNumeroDeHijos.Location = new System.Drawing.Point(150, 207);
+            this.txtNumeroDeHijos.Location = new System.Drawing.Point(150, 155);
             this.txtNumeroDeHijos.Name = "txtNumeroDeHijos";
             this.txtNumeroDeHijos.Size = new System.Drawing.Size(48, 20);
             this.txtNumeroDeHijos.TabIndex = 36;
@@ -360,7 +361,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(17, 255);
+            this.label13.Location = new System.Drawing.Point(222, 153);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(154, 21);
             this.label13.TabIndex = 37;
@@ -368,14 +369,14 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(197, 258);
+            this.txtDireccion.Location = new System.Drawing.Point(402, 156);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(428, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(283, 20);
             this.txtDireccion.TabIndex = 38;
             // 
             // txtTelofonoContacto
             // 
-            this.txtTelofonoContacto.Location = new System.Drawing.Point(166, 310);
+            this.txtTelofonoContacto.Location = new System.Drawing.Point(170, 205);
             this.txtTelofonoContacto.Name = "txtTelofonoContacto";
             this.txtTelofonoContacto.Size = new System.Drawing.Size(152, 20);
             this.txtTelofonoContacto.TabIndex = 40;
@@ -384,7 +385,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(13, 307);
+            this.label14.Location = new System.Drawing.Point(17, 202);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(137, 21);
             this.label14.TabIndex = 39;
@@ -394,7 +395,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(363, 307);
+            this.label15.Location = new System.Drawing.Point(733, 155);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(74, 21);
             this.label15.TabIndex = 41;
@@ -402,7 +403,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtOcupacion
             // 
-            this.txtOcupacion.Location = new System.Drawing.Point(446, 308);
+            this.txtOcupacion.Location = new System.Drawing.Point(816, 156);
             this.txtOcupacion.Name = "txtOcupacion";
             this.txtOcupacion.Size = new System.Drawing.Size(152, 20);
             this.txtOcupacion.TabIndex = 42;
@@ -411,7 +412,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(13, 351);
+            this.label16.Location = new System.Drawing.Point(341, 202);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(135, 21);
             this.label16.TabIndex = 43;
@@ -419,14 +420,14 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtEscolaridad
             // 
-            this.txtEscolaridad.Location = new System.Drawing.Point(166, 354);
+            this.txtEscolaridad.Location = new System.Drawing.Point(494, 205);
             this.txtEscolaridad.Name = "txtEscolaridad";
             this.txtEscolaridad.Size = new System.Drawing.Size(152, 20);
             this.txtEscolaridad.TabIndex = 44;
             // 
             // txtEPS
             // 
-            this.txtEPS.Location = new System.Drawing.Point(109, 410);
+            this.txtEPS.Location = new System.Drawing.Point(145, 263);
             this.txtEPS.Name = "txtEPS";
             this.txtEPS.Size = new System.Drawing.Size(152, 20);
             this.txtEPS.TabIndex = 46;
@@ -435,7 +436,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(29, 407);
+            this.label17.Location = new System.Drawing.Point(65, 260);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(35, 21);
             this.label17.TabIndex = 45;
@@ -443,7 +444,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtRegimen
             // 
-            this.txtRegimen.Location = new System.Drawing.Point(109, 446);
+            this.txtRegimen.Location = new System.Drawing.Point(145, 299);
             this.txtRegimen.Name = "txtRegimen";
             this.txtRegimen.Size = new System.Drawing.Size(152, 20);
             this.txtRegimen.TabIndex = 48;
@@ -452,7 +453,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(19, 443);
+            this.label18.Location = new System.Drawing.Point(55, 296);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(64, 21);
             this.label18.TabIndex = 47;
@@ -460,9 +461,9 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtAntecedentes
             // 
-            this.txtAntecedentes.Location = new System.Drawing.Point(443, 407);
+            this.txtAntecedentes.Location = new System.Drawing.Point(345, 296);
             this.txtAntecedentes.Name = "txtAntecedentes";
-            this.txtAntecedentes.Size = new System.Drawing.Size(271, 117);
+            this.txtAntecedentes.Size = new System.Drawing.Size(271, 75);
             this.txtAntecedentes.TabIndex = 49;
             this.txtAntecedentes.Text = "";
             // 
@@ -470,7 +471,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(19, 485);
+            this.label19.Location = new System.Drawing.Point(55, 338);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(67, 21);
             this.label19.TabIndex = 50;
@@ -478,7 +479,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtConvenio
             // 
-            this.txtConvenio.Location = new System.Drawing.Point(109, 488);
+            this.txtConvenio.Location = new System.Drawing.Point(145, 341);
             this.txtConvenio.Name = "txtConvenio";
             this.txtConvenio.Size = new System.Drawing.Size(152, 20);
             this.txtConvenio.TabIndex = 51;
@@ -487,7 +488,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(335, 351);
+            this.label20.Location = new System.Drawing.Point(663, 202);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(211, 21);
             this.label20.TabIndex = 52;
@@ -495,16 +496,16 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtContactoEmergencia
             // 
-            this.txtContactoEmergencia.Location = new System.Drawing.Point(552, 354);
+            this.txtContactoEmergencia.Location = new System.Drawing.Point(880, 205);
             this.txtContactoEmergencia.Name = "txtContactoEmergencia";
-            this.txtContactoEmergencia.Size = new System.Drawing.Size(152, 20);
+            this.txtContactoEmergencia.Size = new System.Drawing.Size(121, 20);
             this.txtContactoEmergencia.TabIndex = 53;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(290, 443);
+            this.label21.Location = new System.Drawing.Point(386, 263);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(147, 21);
             this.label21.TabIndex = 54;
@@ -517,7 +518,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.button1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.button1.Font = new System.Drawing.Font("Sitka Heading", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(458, 88);
+            this.button1.Location = new System.Drawing.Point(589, 78);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 35);
             this.button1.TabIndex = 55;
@@ -530,6 +531,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.lbllIMCDescripcion);
             this.panel1.Controls.Add(this.lblIMCH);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.lblIMCM);
             this.panel1.Controls.Add(this.lblIMC);
             this.panel1.Controls.Add(this.label26);
@@ -542,25 +544,10 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.panel1.Controls.Add(this.txtEdad);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(51, 544);
+            this.panel1.Location = new System.Drawing.Point(78, 412);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(653, 134);
+            this.panel1.Size = new System.Drawing.Size(923, 134);
             this.panel1.TabIndex = 56;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Gainsboro;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.button2.Font = new System.Drawing.Font("Sitka Heading", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(270, 890);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 35);
-            this.button2.TabIndex = 66;
-            this.button2.Text = "Guardar Paciente";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lbllIMCDescripcion
             // 
@@ -568,7 +555,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.lbllIMCDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.lbllIMCDescripcion.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbllIMCDescripcion.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lbllIMCDescripcion.Location = new System.Drawing.Point(467, 54);
+            this.lbllIMCDescripcion.Location = new System.Drawing.Point(598, 44);
             this.lbllIMCDescripcion.Name = "lbllIMCDescripcion";
             this.lbllIMCDescripcion.Size = new System.Drawing.Size(112, 21);
             this.lbllIMCDescripcion.TabIndex = 65;
@@ -580,7 +567,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.lblIMCH.BackColor = System.Drawing.Color.Honeydew;
             this.lblIMCH.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIMCH.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblIMCH.Location = new System.Drawing.Point(292, 94);
+            this.lblIMCH.Location = new System.Drawing.Point(481, 92);
             this.lblIMCH.Name = "lblIMCH";
             this.lblIMCH.Size = new System.Drawing.Size(46, 21);
             this.lblIMCH.TabIndex = 64;
@@ -592,7 +579,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.lblIMCM.BackColor = System.Drawing.Color.Honeydew;
             this.lblIMCM.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIMCM.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblIMCM.Location = new System.Drawing.Point(292, 53);
+            this.lblIMCM.Location = new System.Drawing.Point(481, 51);
             this.lblIMCM.Name = "lblIMCM";
             this.lblIMCM.Size = new System.Drawing.Size(48, 21);
             this.lblIMCM.TabIndex = 63;
@@ -604,7 +591,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.lblIMC.BackColor = System.Drawing.Color.Honeydew;
             this.lblIMC.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIMC.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblIMC.Location = new System.Drawing.Point(292, 16);
+            this.lblIMC.Location = new System.Drawing.Point(481, 14);
             this.lblIMC.Name = "lblIMC";
             this.lblIMC.Size = new System.Drawing.Size(36, 21);
             this.lblIMC.TabIndex = 62;
@@ -614,7 +601,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(202, 94);
+            this.label26.Location = new System.Drawing.Point(391, 92);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(58, 21);
             this.label26.TabIndex = 61;
@@ -624,7 +611,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(202, 54);
+            this.label25.Location = new System.Drawing.Point(391, 52);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(48, 21);
             this.label25.TabIndex = 60;
@@ -634,7 +621,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(214, 19);
+            this.label24.Location = new System.Drawing.Point(403, 17);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(36, 21);
             this.label24.TabIndex = 57;
@@ -642,7 +629,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtEstatura
             // 
-            this.txtEstatura.Location = new System.Drawing.Point(83, 94);
+            this.txtEstatura.Location = new System.Drawing.Point(182, 65);
             this.txtEstatura.Name = "txtEstatura";
             this.txtEstatura.Size = new System.Drawing.Size(56, 20);
             this.txtEstatura.TabIndex = 59;
@@ -651,7 +638,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(14, 94);
+            this.label23.Location = new System.Drawing.Point(113, 65);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(63, 21);
             this.label23.TabIndex = 58;
@@ -659,7 +646,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtPeso
             // 
-            this.txtPeso.Location = new System.Drawing.Point(83, 54);
+            this.txtPeso.Location = new System.Drawing.Point(248, 22);
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(56, 20);
             this.txtPeso.TabIndex = 56;
@@ -668,24 +655,39 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(24, 51);
+            this.label22.Location = new System.Drawing.Point(189, 19);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(38, 21);
             this.label22.TabIndex = 57;
             this.label22.Text = "Peso";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Gainsboro;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.button2.Font = new System.Drawing.Font("Sitka Heading", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button2.Location = new System.Drawing.Point(758, 78);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 35);
+            this.button2.TabIndex = 66;
+            this.button2.Text = "Guardar Paciente";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // txtBarrio
             // 
-            this.txtBarrio.Location = new System.Drawing.Point(407, 210);
+            this.txtBarrio.Location = new System.Drawing.Point(771, 106);
             this.txtBarrio.Name = "txtBarrio";
-            this.txtBarrio.Size = new System.Drawing.Size(278, 20);
+            this.txtBarrio.Size = new System.Drawing.Size(230, 20);
             this.txtBarrio.TabIndex = 58;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(253, 207);
+            this.label27.Location = new System.Drawing.Point(630, 106);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(135, 21);
             this.label27.TabIndex = 57;
@@ -693,9 +695,9 @@ namespace FormularioHospital2.Formularios.Pacientes
             // 
             // txtHarrisBenedict
             // 
-            this.txtHarrisBenedict.Location = new System.Drawing.Point(248, 703);
+            this.txtHarrisBenedict.Location = new System.Drawing.Point(667, 296);
             this.txtHarrisBenedict.Name = "txtHarrisBenedict";
-            this.txtHarrisBenedict.Size = new System.Drawing.Size(437, 157);
+            this.txtHarrisBenedict.Size = new System.Drawing.Size(287, 75);
             this.txtHarrisBenedict.TabIndex = 67;
             this.txtHarrisBenedict.Text = "";
             // 
@@ -705,7 +707,7 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label28.Location = new System.Drawing.Point(51, 769);
+            this.label28.Location = new System.Drawing.Point(734, 263);
             this.label28.Name = "label28";
             this.label28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label28.Size = new System.Drawing.Size(163, 21);
@@ -717,10 +719,9 @@ namespace FormularioHospital2.Formularios.Pacientes
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(728, 946);
+            this.ClientSize = new System.Drawing.Size(1013, 566);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.txtHarrisBenedict);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.txtBarrio);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.panel1);
@@ -836,5 +837,6 @@ namespace FormularioHospital2.Formularios.Pacientes
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.RichTextBox txtHarrisBenedict;
         private System.Windows.Forms.Label label28;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }
